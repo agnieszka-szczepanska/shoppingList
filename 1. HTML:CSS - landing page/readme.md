@@ -20,6 +20,6 @@ Termin oddania pracy (pull request wykonany z Waszego brancha do brancha main) -
    - Commity są czytelne (po angielsku) i opisowe (opisują krótko co zostało wykonane w danym commicie)
 4. Czytelność kodu - 2pkt
    - HTML i style CSS są umieszczone w osobnych plikach
-   - kod HTML jest semantyczny, tzn. tagi używane są zgodnie z ich przeznaczeniem (jeżeli jest to header, to używamy <header> itp.)
+   - kod HTML jest semantyczny, tzn. tagi używane są zgodnie z ich przeznaczeniem (jeżeli jest to header, to używamy taga header itp.)
    - Klasy są nazwane semantycznie i dotyczą sekcji, którą stylują (czyli nie jest to nazwane 'section-1', 'section-2' itp., ale bardziej 'product-card-container' albo 'main-navigation-button')
    - Style są w miarę możliwości poukładane względem kolejności sekcji w HTML (czyli np. główny rodzic na początku, rodzeństwo obok siebie itp)
