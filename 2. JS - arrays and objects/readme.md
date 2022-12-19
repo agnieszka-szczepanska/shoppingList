@@ -78,4 +78,5 @@ Wynikiem wywołania funkcji ma być:
        libraryID: 4264
    }
 ]
-``` - 2 pkt
+``` 
+- 2 pkt
