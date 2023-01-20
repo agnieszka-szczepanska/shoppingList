@@ -11,8 +11,8 @@
 
 ## Ważne!
 
-Żeby móc usuwać, dodawać do listy i móc "odhaczać" produkty, Wasz produkt będzie musiał posiadać 3 właściwości, np. { ID: 1, name: 'ziemniaki', isActive: false }.
-ID nadawajcie po kolei każdemu produktowi i posługujcie się nim przy usuwaniu produktu, 'name' wyświetlajcie na liście (jest to wartość wpisana w inputa), a 'isActive' zmieniajcie po użyciu checkboxa.
+Żeby móc usuwać, dodawać do listy i móc "odhaczać" produkty, Wasz produkt będzie musiał posiadać 3 właściwości, np. { ID: 1, name: 'ziemniaki', isCompleted: false }.
+ID nadawajcie po kolei każdemu produktowi i posługujcie się nim przy usuwaniu produktu, 'name' wyświetlajcie na liście (jest to wartość wpisana w inputa), a 'isCompleted' zmieniajcie po użyciu checkboxa.
 
 
 ## Punktacja
