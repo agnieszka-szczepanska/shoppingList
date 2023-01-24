@@ -1,7 +1,7 @@
 import React from "react";
 
 function ShoppingList(props) {
-  const removeTask = (id) => {
+  const removeProduct = (id) => {
     props.setProducts(props.products.filter((product) => product.id !== id));
   };
 
@@ -11,15 +11,14 @@ function ShoppingList(props) {
   };
 
   return (
-    <div>
+    <div className="shoppingList">
       {props.products.map((product) => (
-        <div key={product.id}>
+        <div key={product.id} className="product">
           <input
             type="checkbox"
             checked={product.isCompleted}
             onChange={() => scratchProduct(product)}
           />
-          <button onClick={() => removeTask(product.id)}>Delete</button>
           <div
             style={{
               textDecoration: product.isCompleted ? "line-through" : "none",
@@ -27,6 +26,7 @@ function ShoppingList(props) {
           >
             {product.name}
           </div>
+          <button onClick={() => removeProduct(product.id)}>Delete</button>
         </div>
       ))}
     </div>

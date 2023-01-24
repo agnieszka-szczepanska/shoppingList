@@ -1,9 +1,8 @@
 import React from "react";
-import { v4 as uuidv4 } from "uuid";
 import ShoppingList from "./ShoppingList";
 import { useState } from "react";
 
-function ShoppingItem() {
+function ShoppingProductToAdd() {
   const [products, setProducts] = useState([]);
   const [inputValue, setInputValue] = useState("");
 
@@ -11,12 +10,14 @@ function ShoppingItem() {
     event.preventDefault();
     setProducts([
       ...products,
-      { name: inputValue, id: uuidv4(), isCompleted: false },
+      { name: inputValue, id: products.length, isCompleted: false },
     ]);
+    setInputValue("");
   };
 
   return (
     <>
+      <h1 className="heading">Shopping list:</h1>
       <form>
         <input
           type="text"
@@ -24,11 +25,11 @@ function ShoppingItem() {
           placeholder="Add product"
           value={inputValue}
         />
-        <button onClick={handleSubmit}>Add product</button>
+        <button className="btn" onClick={handleSubmit}>
+          Add product
+        </button>
       </form>
       <ShoppingList
-        setInputValue={setInputValue}
-        inputValue={inputValue}
         products={products}
         setProducts={setProducts}
       ></ShoppingList>
@@ -36,4 +37,4 @@ function ShoppingItem() {
   );
 }
 
-export default ShoppingItem;
+export default ShoppingProductToAdd;
