@@ -6,7 +6,7 @@ body {
   margin: 20px auto;
   width: 50vw;
   padding: 30px;
-  height: 70vh;
+  min-height: 70vh;
   box-shadow: 5px 5px 5px rgb(71, 71, 71);
   display: flex;
   flex-direction: column;
